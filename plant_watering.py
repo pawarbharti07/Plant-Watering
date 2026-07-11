@@ -5,9 +5,9 @@ import joblib
 from tensorflow.keras.models import load_model
 
 # Load model and scaler
-model = load_model(r"C:/Users/admin/Downloads/plant_watering_ann.keras")
+model = load_model("plant_watering_ann.keras")
 
-scaler = joblib.load(r"C:/Users/admin/Downloads/plant_scaler.pkl")
+scaler = joblib.load("plant_scaler.pkl")
 
 
 st.set_page_config(
