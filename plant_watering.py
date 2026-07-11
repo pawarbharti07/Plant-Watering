@@ -2,10 +2,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-from tensorflow.keras.models import load_model
+import tensorflow as tf
 
-# Load model and scaler
-model = load_model("plant_watering_ann.keras")
+model = tf.keras.models.load_model("plant_watering_ann.keras")
 
 scaler = joblib.load("plant_scaler.pkl")
 
