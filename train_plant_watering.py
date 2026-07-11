@@ -21,7 +21,7 @@ import joblib
 from tensorflow.keras.layers import Dense, Input
 from tensorflow.keras.callbacks import EarlyStopping
 
-df = pd.read_csv("/content/plant_watering_training_dataset.csv")
+df = pd.read_csv("plant_watering_training_dataset.csv")
 df.head()
 
 df.info()
