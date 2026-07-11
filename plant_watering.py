@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 import tensorflow as tf
 
-model = tf.keras.models.load_model("plant_watering_ann.keras")
+model = tf.keras.models.load_model("plant_watering_ann.keras",compile=False)
 
 scaler = joblib.load("plant_scaler.pkl")
 
